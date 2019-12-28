@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test-ingress
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /api/student/v1/public/health
+            backend:
+              serviceName: nguyendo2008-svc
+              servicePort: 9090
