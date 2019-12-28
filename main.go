@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hoaxoan/nc_course/nc_user/config"
-	db "github.com/hoaxoan/nc_course/nc_user/db"
-	md "github.com/hoaxoan/nc_course/nc_user/middleware"
-	us "github.com/hoaxoan/nc_course/nc_user/user"
+	"github.com/hoaxoan/nc_user/config"
+	db "github.com/hoaxoan/nc_user/db"
+	md "github.com/hoaxoan/nc_user/middleware"
+	us "github.com/hoaxoan/nc_user/user"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 )

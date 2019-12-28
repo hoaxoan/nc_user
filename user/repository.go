@@ -3,7 +3,7 @@ package user
 import (
 	"context"
 
-	md "github.com/hoaxoan/nc_course/nc_user/model"
+	md "github.com/hoaxoan/nc_user/model"
 	"go.mongodb.org/mongo-driver/mongo"
 	"gopkg.in/mgo.v2/bson"
 )

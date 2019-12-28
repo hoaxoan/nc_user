@@ -1,7 +1,7 @@
 package user
 
 import (
-	md "github.com/hoaxoan/nc_course/nc_user/model"
+	md "github.com/hoaxoan/nc_user/model"
 	"github.com/labstack/echo/v4"
 	"net/http"
 )

@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	md "github.com/hoaxoan/nc_course/nc_user/model"
+	md "github.com/hoaxoan/nc_user/model"
 	"golang.org/x/crypto/bcrypt"
 )
 

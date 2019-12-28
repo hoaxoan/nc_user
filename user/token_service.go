@@ -2,7 +2,7 @@ package user
 
 import (
 	"github.com/dgrijalva/jwt-go"
-	md "github.com/hoaxoan/nc_course/nc_user/model"
+	md "github.com/hoaxoan/nc_user/model"
 )
 
 var (

@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/hoaxoan/nc_course/nc_user/config"
+	"github.com/hoaxoan/nc_user/config"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"go.mongodb.org/mongo-driver/mongo/readpref"
