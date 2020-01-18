@@ -30,6 +30,6 @@ type ConfigSchema struct {
 		Password string `mapstructure:"Password"`
 	} `mapstructure:"MongoDB"`
 	JWTSecret struct {
-		JWTKey string
-	}
+		JWTKey string `mapstructure:"JWTEncodeKey"`
+	} `mapstructure:"JWTSeret"`
 }
