@@ -29,13 +29,13 @@ func PrivateRoute(e *echo.Echo, handler *userHandler) {
 		Claims:     &model.CustomClaims{},
 	}
 
-	g := e.Group("/v1/private")
+	g := e.Group("/api/user/v1/private")
 	g.Use(middleware.JWTWithConfig(JWTConfig))
 	g.PUT("/user", handler.Update)
 }
 
 func PublicRoute(e *echo.Echo, handler *userHandler) {
-	g := e.Group("/v1/public")
+	g := e.Group("/api/user/v1/public")
 	g.PATCH("/user/login", handler.Auth)
 	g.POST("/user/register", handler.Register)
 }

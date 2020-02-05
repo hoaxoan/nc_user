@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nguyendo2008-student
+  name: user
   labels:
-    app: student
+    app: user
 spec:
   containers:
-  - image: nguyendo2008/nc_student
-    name: cont
-    ports:
-    - containerPort: 9090
-      name: web
-    resources:
-      requests:
-        memory: "60Mi"
-        cpu: "50m"
-      limits:
-        memory: "75Mi"
-        cpu: "75m"
+    - image: nguyendo2008/nc_user
+      name: gocontainer
+      ports:
+        - containerPort: 9090
+          name: web
+      resources:
+        requests:
+          memory: "60Mi"
+          cpu: "50m"
+        limits:
+          memory: "75Mi"
+          cpu: "75m"
