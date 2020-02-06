@@ -5,7 +5,7 @@ COPY go.mod .
 COPY go.sum .
 #download dependency
 RUN go mod download
-#copy source
+#copy source code
 COPY . .
 #build
 RUN go build -o /go/bin/main
@@ -14,9 +14,9 @@ RUN go build -o /go/bin/main
 FROM alpine:3.5
 WORKDIR /app
 RUN apk add --update ca-certificates
-# RUN apk add --no-cache tzdata && \
-#   cp -f /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime && \
-#   apk del tzdata
+RUN apk add --no-cache tzdata && \
+  cp -f /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime && \
+  apk del tzdata
 
 COPY --from=builder go/bin/main .  
 COPY ./config/config.yaml ./config/
